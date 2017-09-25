@@ -1,0 +1,53 @@
+var arr = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=chile&limit=10&namespace=0&format=json';
+/*
+var arr = ["chile",["Chile","Chili pepper","Chile national football team","Chili con carne","Chilean Navy","Chilean cuisine","Chilean Army","Chilean wine","Chilean general election, 2013","Chilean presidential election, 2009\u201310"],["Chile (; Spanish: [\u02c8t\u0283ile]), officially the Republic of Chile (Spanish:  Rep\u00fablica de Chile ), is a South American country occupying a long, narrow strip of land between the Andes to the east and the Pacific Ocean to the west.","The chili pepper (also chile pepper chilli pepper, or simply chilli, from Nahuatl ch\u012blli Nahuatl pronunciation: [\u02c8t\u0361\u0283i\u02d0li]) is the fruit of plants from the genus Capsicum, members of the nightshade family, Solanaceae.","The Chile national football team (Selecci\u00f3n de f\u00fatbol de Chile) represents Chile in all major international football competitions and is controlled by the Federaci\u00f3n de F\u00fatbol de Chile which was established in 1895. The team is commonly referred to as La Roja (\"The Red One\").","Chili con carne (Spanish pronunciation: [\u02c8t\u0283ili ko\u014b \u02c8ka\u027ene]; English: chili with meat), commonly known in American English as simply \"chili\", is a spicy stew containing chili peppers, meat (usually beef), and often tomatoes and beans.","The Chilean Navy (Armada de Chile) is the naval force of Chile.","Chilean gastronomy stems mainly from the combination of traditional Spanish cuisine, Chilean Indigenous Mapuche culture and local ingredients, with later important influences from other European cuisines, particularly from Germany, Italy and France.","The Chilean Army (Spanish: Ej\u00e9rcito de Chile) is the land arm of the Military of Chile. This 50,000-strong army (9,200 of which are conscripts) is organized into six divisions, a special operations brigade and an air brigade.","Chilean wine is wine made in Chile. Chile has a long viticultural history for a New World wine region dating to the 16th century when the Spanish conquistadors brought Vitis vinifera vines with them as they colonized the region.","General elections were held in Chile on 17 November 2013, including presidential, parliamentary and regional elections.","The first round of the Chilean presidential election of 2009\u20132010 was held on Sunday December 13, 2009. Based on the two-round system, since none of the candidates secured the absolute majority needed to take the presidency outright, a run-off between the two most-voted candidates \u2014center-right Sebasti\u00e1n Pi\u00f1era and center-left Eduardo Frei Ruiz-Tagle\u2014 was held on Sunday, January 17, 2010. Pi\u00f1era, who won the runoff with about 51.6% of the vote, succeeded Michelle Bachelet on March 11, 2010. Parliamentary elections took place on the same day."],["https://en.wikipedia.org/wiki/Chile","https://en.wikipedia.org/wiki/Chili_pepper","https://en.wikipedia.org/wiki/Chile_national_football_team","https://en.wikipedia.org/wiki/Chili_con_carne","https://en.wikipedia.org/wiki/Chilean_Navy","https://en.wikipedia.org/wiki/Chilean_cuisine","https://en.wikipedia.org/wiki/Chilean_Army","https://en.wikipedia.org/wiki/Chilean_wine","https://en.wikipedia.org/wiki/Chilean_general_election,_2013","https://en.wikipedia.org/wiki/Chilean_presidential_election,_2009%E2%80%9310"]];
+*/
+ $("#demo").html("<div>"+arr[2][0]+"</div><br>"+
+                 "<div>"+arr[2][1]+"</div><br>"+
+                 "<div>"+arr[2][2]+"</div><br>"+
+                 "<div>"+arr[2][3]+"</div><br>"+
+                 "<div>"+arr[2][4]+"</div><br>"+
+                 "<div>"+arr[2][5]+"</div><br>"+
+                 "<div>"+arr[2][6]+"</div><br>"+
+                 "<div>"+arr[2][7]+"</div><br>"+
+                 "<div>"+arr[2][8]+"</div><br>"+
+                 "<div>"+arr[2][9]+"</div><br>"
+                    );
+ 
+
+/*function goTo1(){
+  $(document).ready(function (){
+var api = JSON.parse('https://en.wikipedia.org/w/api.php?action=opensearch&search=api&limit=10&namespace=0&format=json');
+$.getJSON(api, function (data){
+alert(data);
+});//ends getJSON
+});//ends document.ready
+}
+
+function goTo()
+{
+var api = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=api&limit=10&namespace=0&format=json';
+  var api_parsed = JSON.parse(api);
+ $.getJSON(api, function(data){
+ $("#demo").html("this data is : "+data);
+//document.getElementById("demo").innerHTML = "here show come something"+api;
+ // });
+});}
+
+*/
+function goRandom()
+//this functions links to the random article in wikipedia
+{
+  location.href = "https://en.wikipedia.org/wiki/Special:Random";
+}
+
+
+/*returns an array with the first 10 articles found related to "api"
+https://en.wikipedia.org/w/api.php?action=opensearch&search=api&limit=10&namespace=0&format=json
+*/
+
+/*
+I can see a string under click here to get random article
+(conect a div that will appear after clicking)
+
+*/

@@ -1,0 +1,29 @@
+<!--User Story: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
+this is probably what you need:https://en.wikipedia.org/w/api.php?action=opensearch&search=api&limit=10&namespace=0&format=jsonfm
+User Story: I can click a button to see a random Wikipedia entry.-->
+
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <h3>Search in Wikipedia</h3>
+<input type='text' id='link_id'>
+<input type='button' target="_blank" id='link' value='Search' onClick='goTo1()'>
+    <hr>
+  <button target="_blank" onclick="goRandom()">Click here to get your random article!</button>
+  
+<div class="row">
+  <blockquote style="background-color:white" id="demo"><br/></blockquote >  
+  <br/><br/>
+  
+  
+  
+  
+  
+
+
+</div>
+  </body>
+  <script src="./js/json.js"></script>
+</html>
